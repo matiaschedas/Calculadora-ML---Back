@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Agente\\Desktop\\Calculadora MATOLI\\backend\\Matoli.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Agente\\Desktop\\Repos\\Calculadora-ML---Back\\Matoli.Api.csproj",
       "projectName": "Matoli.Api",
-      "projectPath": "C:\\Users\\Agente\\Desktop\\Calculadora MATOLI\\backend\\Matoli.Api.csproj",
+      "projectPath": "C:\\Users\\Agente\\Desktop\\Repos\\Calculadora-ML---Back\\Matoli.Api.csproj",
       "packagesPath": "C:\\Users\\Agente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Agente\\Desktop\\Calculadora MATOLI\\backend\\obj\\",
+      "outputPath": "C:\\Users\\Agente\\Desktop\\Repos\\Calculadora-ML---Back\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Agente\\AppData\\Roaming\\NuGet\\NuGet.Config"

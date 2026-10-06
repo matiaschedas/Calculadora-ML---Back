@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Matoli.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3d02e9439bd80e744f4d7e08950374d09257ce2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Matoli.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Matoli.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

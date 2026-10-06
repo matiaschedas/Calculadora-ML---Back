@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R2wPGf2Cwow=",
+  "dgSpecHash": "QoXAX+1YJC0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Agente\\Desktop\\Calculadora MATOLI\\backend\\Matoli.Api.csproj",
+  "projectFilePath": "C:\\Users\\Agente\\Desktop\\Repos\\Calculadora-ML---Back\\Matoli.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agente\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.30\\microsoft.aspnetcore.openapi.8.0.30.nupkg.sha512",
     "C:\\Users\\Agente\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

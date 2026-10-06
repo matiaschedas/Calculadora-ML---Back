@@ -45,6 +45,7 @@ public class CategoriaResultado
     public string LeafName { get; set; } = string.Empty;
     public string ParentPath { get; set; } = string.Empty;
     public decimal CargoPct { get; set; }
+    public decimal? FixedFee { get; set; }
     public bool Exacto { get; set; }
     public decimal? Min { get; set; }
     public decimal? Max { get; set; }

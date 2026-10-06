@@ -1,0 +1,22 @@
+ ### 1. C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\Data\tarifas.json (El archivo principal)
+
+ Este archivo contiene casi todas las reglas del negocio y tarifas fijas. Deberás actualizarlo cuando cambien:
+ - meta: Umbral de envío gratis (ej. $33.000), precios mínimos, IVA, etc.                                             - cargoPorVender: Porcentajes mínimos y máximos base.
+ - cuotas: Costos porcentuales por ofrecer cuotas sin interés (3, 6, 9, 12 cuotas).
+ - pesos: Los tramos de peso en kg que maneja Mercado Envíos.
+ - costoFijo: La tabla de costos fijos por unidad vendida según el tramo de precio del producto y su peso.
+ - envio: Las tablas completas de costos de envío gratis según la reputación (verde, amarilla, roja, usados,
+   zapatillas).
+ - flex: Zonas de entrega de Mercado Envíos Flex y montos de bonificación.
+ - full: Costos de almacenamiento diario en depósitos Full según el tamaño del paquete.
+ - mp: Plazos de disponibilidad del dinero y comisiones de Mercado Pago (Link de pago) agrupados por provincia.
+
+ ────────────────────────────────────────────────────────────────────────────────
+
+ ### 2. C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\Data\categorias.json
+
+ Este archivo almacena la lista masiva de categorías de Mercado Libre y sus comisiones específicas.
+ - Cuándo actualizarlo: Si Mercado Libre modifica masivamente las comisiones de categorías específicas (por ejemplo,
+   si Electrónica pasa del 14% al 15.5%), deberás actualizar los porcentajes o la estructura de este archivo JSON.
+
+ ────────────────────────────────────────────────────────────────────────────────
