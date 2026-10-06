@@ -1,0 +1,1322 @@
+{
+  "meta": {
+    "actualizado": "2026-10-02",
+    "umbralEnvioGratis": 33000,
+    "precioMinimo": 1000,
+    "precioMinimoMasivo": 3500,
+    "divisorVolumetrico": 4000,
+    "ivaGeneral": 21,
+    "credDebPct": 1.2
+  },
+  "cargoPorVender": {
+    "minPct": 8,
+    "maxPct": 17,
+    "defaultPct": 14,
+    "nota": "El % depende de la categoría final (ver js/categorias.js). Mercado Libre lo descuenta tal cual, sin sumar IVA aparte."
+  },
+  "cuotas": [
+    {
+      "id": "none",
+      "label": "Sin cuotas (solo cuotas con interés de los bancos)",
+      "pct": 0
+    },
+    {
+      "id": "bajo",
+      "label": "Cuotas con interés bajo (3 a 12 cuotas)",
+      "pct": 5
+    },
+    {
+      "id": "c3",
+      "label": "3 cuotas al mismo precio",
+      "pct": 8.9
+    },
+    {
+      "id": "c6",
+      "label": "6 cuotas al mismo precio",
+      "pct": 13.4
+    },
+    {
+      "id": "c9",
+      "label": "9 cuotas al mismo precio",
+      "pct": 17.8
+    },
+    {
+      "id": "c12",
+      "label": "12 cuotas al mismo precio",
+      "pct": 21.6
+    }
+  ],
+  "pesos": [
+    0.3,
+    0.5,
+    1,
+    1.5,
+    2,
+    3,
+    4,
+    5,
+    8,
+    10,
+    13,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    120,
+    140,
+    160,
+    180,
+    null
+  ],
+  "costoFijo": {
+    "tramosPrecio": [
+      15000,
+      24000
+    ],
+    "porPrecio": [
+      1330,
+      2740,
+      3320
+    ],
+    "porPeso": [
+      [
+        0.3,
+        1330,
+        2740,
+        3320
+      ],
+      [
+        0.5,
+        1370,
+        2760,
+        3340
+      ],
+      [
+        1,
+        1390,
+        2780,
+        3360
+      ],
+      [
+        1.5,
+        1410,
+        2800,
+        3380
+      ],
+      [
+        2,
+        1430,
+        2820,
+        3400
+      ],
+      [
+        3,
+        1450,
+        2860,
+        3470
+      ],
+      [
+        4,
+        1470,
+        2910,
+        3520
+      ],
+      [
+        5,
+        1500,
+        3040,
+        3670
+      ],
+      [
+        8,
+        1520,
+        3130,
+        3760
+      ],
+      [
+        10,
+        1560,
+        3180,
+        3910
+      ],
+      [
+        13,
+        1590,
+        3220,
+        4020
+      ],
+      [
+        15,
+        1620,
+        3280,
+        4060
+      ],
+      [
+        20,
+        1640,
+        3320,
+        4100
+      ],
+      [
+        25,
+        1660,
+        3380,
+        4170
+      ],
+      [
+        30,
+        1680,
+        3410,
+        4210
+      ],
+      [
+        40,
+        1700,
+        3440,
+        4250
+      ],
+      [
+        50,
+        1720,
+        3460,
+        4300
+      ],
+      [
+        60,
+        1740,
+        3480,
+        4320
+      ],
+      [
+        70,
+        1760,
+        3510,
+        4350
+      ],
+      [
+        80,
+        1780,
+        3530,
+        4370
+      ],
+      [
+        90,
+        1800,
+        3560,
+        4400
+      ],
+      [
+        100,
+        1820,
+        3580,
+        4420
+      ],
+      [
+        120,
+        1840,
+        3600,
+        4450
+      ],
+      [
+        140,
+        1860,
+        3620,
+        4470
+      ],
+      [
+        160,
+        1880,
+        3650,
+        4500
+      ],
+      [
+        180,
+        1900,
+        3680,
+        4520
+      ],
+      [
+        null,
+        1920,
+        3700,
+        4550
+      ]
+    ]
+  },
+  "envio": {
+    "verde": [
+      [
+        0.3,
+        8666,
+        6190,
+        6790
+      ],
+      [
+        0.5,
+        9506,
+        6790,
+        7290
+      ],
+      [
+        1,
+        10906,
+        7790,
+        8290
+      ],
+      [
+        1.5,
+        11186,
+        7990,
+        8590
+      ],
+      [
+        2,
+        11606,
+        8290,
+        8790
+      ],
+      [
+        3,
+        12446,
+        8890,
+        9590
+      ],
+      [
+        4,
+        13706,
+        9790,
+        10890
+      ],
+      [
+        5,
+        15106,
+        10790,
+        11890
+      ],
+      [
+        8,
+        16506,
+        11790,
+        13090
+      ],
+      [
+        10,
+        17906,
+        12790,
+        14190
+      ],
+      [
+        13,
+        19306,
+        13790,
+        15190
+      ],
+      [
+        15,
+        20706,
+        14790,
+        16290
+      ],
+      [
+        20,
+        24626,
+        17590,
+        19390
+      ],
+      [
+        25,
+        29246,
+        20890,
+        23390
+      ],
+      [
+        30,
+        40026,
+        28590,
+        32090
+      ],
+      [
+        40,
+        45626,
+        32590,
+        36990
+      ],
+      [
+        50,
+        48146,
+        34390,
+        39090
+      ],
+      [
+        60,
+        53326,
+        38090,
+        43590
+      ],
+      [
+        70,
+        55426,
+        39590,
+        45490
+      ],
+      [
+        80,
+        64106,
+        45790,
+        52690
+      ],
+      [
+        90,
+        78946,
+        56390,
+        65190
+      ],
+      [
+        100,
+        90986,
+        64990,
+        75090
+      ],
+      [
+        120,
+        99246,
+        70890,
+        81990
+      ],
+      [
+        140,
+        111706,
+        79790,
+        92290
+      ],
+      [
+        160,
+        124166,
+        88690,
+        102690
+      ],
+      [
+        180,
+        136486,
+        97490,
+        112990
+      ],
+      [
+        null,
+        148946,
+        106390,
+        123290
+      ]
+    ],
+    "amarilla": [
+      [
+        0.3,
+        9904,
+        7428,
+        8148
+      ],
+      [
+        0.5,
+        10864,
+        8148,
+        8748
+      ],
+      [
+        1,
+        12464,
+        9348,
+        9948
+      ],
+      [
+        1.5,
+        12784,
+        9588,
+        10308
+      ],
+      [
+        2,
+        13264,
+        9948,
+        10548
+      ],
+      [
+        3,
+        14224,
+        10668,
+        11508
+      ],
+      [
+        4,
+        15664,
+        11748,
+        13068
+      ],
+      [
+        5,
+        17264,
+        12948,
+        14268
+      ],
+      [
+        8,
+        18864,
+        14148,
+        15708
+      ],
+      [
+        10,
+        20464,
+        15348,
+        17028
+      ],
+      [
+        13,
+        22064,
+        16548,
+        18228
+      ],
+      [
+        15,
+        23664,
+        17748,
+        19548
+      ],
+      [
+        20,
+        28144,
+        21108,
+        23268
+      ],
+      [
+        25,
+        33424,
+        25068,
+        28068
+      ],
+      [
+        30,
+        45744,
+        34308,
+        38508
+      ],
+      [
+        40,
+        52144,
+        39108,
+        44388
+      ],
+      [
+        50,
+        55024,
+        41268,
+        46908
+      ],
+      [
+        60,
+        60944,
+        45708,
+        52308
+      ],
+      [
+        70,
+        63344,
+        47508,
+        54588
+      ],
+      [
+        80,
+        73264,
+        54948,
+        63228
+      ],
+      [
+        90,
+        90224,
+        67668,
+        78228
+      ],
+      [
+        100,
+        103984,
+        77988,
+        90108
+      ],
+      [
+        120,
+        113424,
+        85068,
+        98388
+      ],
+      [
+        140,
+        127664,
+        95748,
+        110748
+      ],
+      [
+        160,
+        141904,
+        106428,
+        123228
+      ],
+      [
+        180,
+        155984,
+        116988,
+        135588
+      ],
+      [
+        null,
+        170224,
+        127668,
+        147948
+      ]
+    ],
+    "roja": [
+      [
+        0.3,
+        12380,
+        13580
+      ],
+      [
+        0.5,
+        13580,
+        14580
+      ],
+      [
+        1,
+        15580,
+        16580
+      ],
+      [
+        1.5,
+        15980,
+        17180
+      ],
+      [
+        2,
+        16580,
+        17580
+      ],
+      [
+        3,
+        17780,
+        19180
+      ],
+      [
+        4,
+        19580,
+        21780
+      ],
+      [
+        5,
+        21580,
+        23780
+      ],
+      [
+        8,
+        23580,
+        26180
+      ],
+      [
+        10,
+        25580,
+        28380
+      ],
+      [
+        13,
+        27580,
+        30380
+      ],
+      [
+        15,
+        29580,
+        32580
+      ],
+      [
+        20,
+        35180,
+        38780
+      ],
+      [
+        25,
+        41780,
+        46780
+      ],
+      [
+        30,
+        57180,
+        64180
+      ],
+      [
+        40,
+        65180,
+        73980
+      ],
+      [
+        50,
+        68780,
+        78180
+      ],
+      [
+        60,
+        76180,
+        87180
+      ],
+      [
+        70,
+        79180,
+        90980
+      ],
+      [
+        80,
+        91580,
+        105380
+      ],
+      [
+        90,
+        112780,
+        130380
+      ],
+      [
+        100,
+        129980,
+        150180
+      ],
+      [
+        120,
+        141780,
+        163980
+      ],
+      [
+        140,
+        159580,
+        184580
+      ],
+      [
+        160,
+        177380,
+        205380
+      ],
+      [
+        180,
+        194980,
+        225980
+      ],
+      [
+        null,
+        212780,
+        246580
+      ]
+    ],
+    "usados": [
+      [
+        0.3,
+        13580
+      ],
+      [
+        0.5,
+        14580
+      ],
+      [
+        1,
+        16580
+      ],
+      [
+        1.5,
+        17180
+      ],
+      [
+        2,
+        17580
+      ],
+      [
+        3,
+        19180
+      ],
+      [
+        4,
+        21780
+      ],
+      [
+        5,
+        23780
+      ],
+      [
+        8,
+        26180
+      ],
+      [
+        10,
+        28380
+      ],
+      [
+        13,
+        30380
+      ],
+      [
+        15,
+        32580
+      ],
+      [
+        20,
+        38780
+      ],
+      [
+        25,
+        46780
+      ],
+      [
+        30,
+        64180
+      ],
+      [
+        40,
+        73980
+      ],
+      [
+        50,
+        78180
+      ],
+      [
+        60,
+        87180
+      ],
+      [
+        70,
+        90980
+      ],
+      [
+        80,
+        105380
+      ],
+      [
+        90,
+        130380
+      ],
+      [
+        100,
+        150180
+      ],
+      [
+        120,
+        163980
+      ],
+      [
+        140,
+        184580
+      ],
+      [
+        160,
+        205380
+      ],
+      [
+        180,
+        225980
+      ],
+      [
+        null,
+        246580
+      ]
+    ],
+    "zapatillas": [
+      [
+        0.3,
+        6190,
+        6790,
+        6790
+      ],
+      [
+        0.5,
+        6790,
+        7290,
+        7290
+      ],
+      [
+        1,
+        7790,
+        8290,
+        8290
+      ],
+      [
+        1.5,
+        7990,
+        8590,
+        8590
+      ],
+      [
+        2,
+        8290,
+        8790,
+        8790
+      ],
+      [
+        3,
+        8290,
+        8790,
+        9590
+      ],
+      [
+        4,
+        8290,
+        8790,
+        9590
+      ],
+      [
+        5,
+        8290,
+        8790,
+        9590
+      ],
+      [
+        8,
+        8290,
+        8790,
+        9590
+      ],
+      [
+        10,
+        12790,
+        14190,
+        14190
+      ],
+      [
+        13,
+        13790,
+        15190,
+        15190
+      ],
+      [
+        15,
+        14790,
+        16290,
+        16290
+      ],
+      [
+        20,
+        17590,
+        19390,
+        19390
+      ],
+      [
+        25,
+        20890,
+        22790,
+        22790
+      ],
+      [
+        30,
+        28590,
+        31290,
+        31290
+      ],
+      [
+        40,
+        32590,
+        36990,
+        36990
+      ],
+      [
+        50,
+        34390,
+        39090,
+        39090
+      ],
+      [
+        60,
+        38090,
+        43590,
+        43590
+      ],
+      [
+        70,
+        39590,
+        45490,
+        45490
+      ],
+      [
+        80,
+        45790,
+        52690,
+        52690
+      ],
+      [
+        90,
+        56390,
+        65190,
+        65190
+      ],
+      [
+        100,
+        64990,
+        75090,
+        75090
+      ],
+      [
+        120,
+        70890,
+        81990,
+        81990
+      ],
+      [
+        140,
+        79790,
+        92290,
+        92290
+      ],
+      [
+        160,
+        88690,
+        102690,
+        102690
+      ],
+      [
+        180,
+        97490,
+        112990,
+        112990
+      ],
+      [
+        null,
+        106390,
+        123290,
+        123290
+      ]
+    ]
+  },
+  "flex": {
+    "fuente": "terceros",
+    "zonas": [
+      {
+        "id": "domicilio",
+        "label": "Zona del domicilio",
+        "menor33": 4990,
+        "desde33verde": 499
+      },
+      {
+        "id": "cercana",
+        "label": "Zona cercana",
+        "menor33": 6990,
+        "desde33verde": 699
+      },
+      {
+        "id": "lejana",
+        "label": "Zona lejana",
+        "menor33": 8990,
+        "desde33verde": 899
+      },
+      {
+        "id": "muylejana",
+        "label": "Zona muy lejana",
+        "menor33": 10490,
+        "desde33verde": 1049
+      }
+    ],
+    "nota": "En Flex el comprador paga el envío (productos <$33.000) y Mercado Libre te bonifica un monto según la zona; el costo de la entrega lo ponés vos. Desde $33.000 la bonificación es del 10% y solo para reputación verde / MercadoLíder."
+  },
+  "full": {
+    "almacenamientoDiario": [
+      {
+        "id": "pequeno",
+        "label": "Pequeño",
+        "detalle": "hasta 15 x 20 x 20 cm y 12 kg (ej.: tablet)",
+        "tarifa": 0.75
+      },
+      {
+        "id": "mediano",
+        "label": "Mediano",
+        "detalle": "hasta 28 x 36 x 51 cm y 12 kg (ej.: cafetera)",
+        "tarifa": 2.4
+      },
+      {
+        "id": "grande",
+        "label": "Grande",
+        "detalle": "hasta 60 x 70 x 80 cm y 12 kg (ej.: microondas)",
+        "tarifa": 20
+      },
+      {
+        "id": "xgrande",
+        "label": "Extragrande",
+        "detalle": "más de 60 x 70 x 80 cm y/o más de 12 kg (ej.: balde de pintura)",
+        "tarifa": 65
+      }
+    ],
+    "stockAntiguoMeses": 4,
+    "stockAntiguoMesesSuper": 2,
+    "notas": [
+      "Productos de Supermercado: el almacenamiento en Full es gratis.",
+      "Desde los 4 meses almacenadas (2 en Supermercado) las unidades pagan un cargo por stock antiguo que depende del tamaño y la antigüedad; lo ves en Ventas > Cargos por stock antiguo.",
+      "Colecta a domicilio, retiro y descarte de stock tienen costos aparte (por volumen / por unidad)."
+    ]
+  },
+  "liberacion": {
+    "conReputacionNuevo": 8,
+    "conReputacionUsado": 14,
+    "sinReputacion": 14,
+    "full": 6,
+    "propio": 8
+  },
+  "mp": {
+    "vigencia": "2026-03-06",
+    "plazos": [
+      {
+        "id": "0",
+        "label": "Al instante",
+        "dias": 0
+      },
+      {
+        "id": "10",
+        "label": "En 10 días",
+        "dias": 10
+      },
+      {
+        "id": "18",
+        "label": "En 18 días",
+        "dias": 18
+      },
+      {
+        "id": "35",
+        "label": "En 35 días",
+        "dias": 35
+      }
+    ],
+    "grupos": [
+      {
+        "id": "A",
+        "pct": [
+          6.6,
+          4.61,
+          3.56,
+          1.56
+        ],
+        "provincias": [
+          "Buenos Aires",
+          "Chubut",
+          "Entre Ríos",
+          "Córdoba"
+        ]
+      },
+      {
+        "id": "B",
+        "pct": [
+          6.46,
+          4.51,
+          3.48,
+          1.53
+        ],
+        "provincias": [
+          "Catamarca",
+          "Formosa",
+          "Mendoza"
+        ]
+      },
+      {
+        "id": "C",
+        "pct": [
+          6.19,
+          4.32,
+          3.34,
+          1.47
+        ],
+        "provincias": [
+          "Chaco",
+          "San Juan",
+          "Santa Cruz",
+          "Santiago del Estero"
+        ]
+      },
+      {
+        "id": "D",
+        "pct": [
+          6.29,
+          4.39,
+          3.39,
+          1.49
+        ],
+        "provincias": [
+          "Ciudad de Buenos Aires",
+          "Corrientes",
+          "La Pampa",
+          "Misiones",
+          "Neuquén",
+          "Salta",
+          "San Luis",
+          "Tierra del Fuego",
+          "Tucumán",
+          "Jujuy"
+        ]
+      },
+      {
+        "id": "E",
+        "pct": [
+          6.49,
+          4.53,
+          3.5,
+          1.54
+        ],
+        "provincias": [
+          "La Rioja"
+        ]
+      },
+      {
+        "id": "F",
+        "pct": [
+          6.39,
+          4.46,
+          3.44,
+          1.51
+        ],
+        "provincias": [
+          "Río Negro"
+        ]
+      },
+      {
+        "id": "G",
+        "pct": [
+          6.42,
+          4.48,
+          3.46,
+          1.52
+        ],
+        "provincias": [
+          "Santa Fe"
+        ]
+      }
+    ],
+    "nota": "Las ventas hechas dentro de Mercado Libre no pagan este costo: ahí el costo es el cargo por vender."
+  },
+  "impuestos": [
+    {
+      "titulo": "Monotributista",
+      "items": [
+        "Ingresos Brutos: retención en cada cobro y percepción al cierre de la factura (son anticipos de tu IIBB).",
+        "Percepción especial de IVA: solo si superás los límites de facturación o de precio unitario del monotributo.",
+        "No hay retenciones de IVA ni de Ganancias."
+      ]
+    },
+    {
+      "titulo": "Responsable inscripto",
+      "items": [
+        "Percepción general y especial de IVA, retención y percepción de IIBB.",
+        "Impuesto sobre los créditos y débitos (personas jurídicas).",
+        "El IVA de los cargos de Mercado Libre es crédito fiscal. Tu costo y tu precio se manejan sin IVA."
+      ]
+    },
+    {
+      "titulo": "Para todos",
+      "items": [
+        "Desde el 01/09/2024 ARCA eliminó las retenciones de IVA y Ganancias en Mercado Libre / Mercado Pago.",
+        "Las retenciones y percepciones son pagos a cuenta: se usan como saldo a favor en tus declaraciones juradas.",
+        "La alícuota de IIBB depende de tu provincia, actividad y padrón (SIRTAC, ARBA, AGIP, etc.). Cargá la tuya en el perfil."
+      ]
+    }
+  ],
+  "cambios": [
+    {
+      "fecha": "06/03/2026",
+      "texto": "Nuevos costos de cobro con Mercado Pago (Link de pago y otros canales) por provincia y plazo."
+    },
+    {
+      "fecha": "12/03/2026",
+      "texto": "El costo por unidad vendida deja de depender solo del precio: ahora varía según la logística (Full, correo, colecta, puntos de despacho: precio + peso; Flex / acuerdo / retiro: precio)."
+    },
+    {
+      "fecha": "01/09/2026",
+      "texto": "Se actualizan los costos de envío gratis desde $33.000, el costo por unidad vendida de productos menores a $33.000 y las tarifas de Flex (AMBA)."
+    },
+    {
+      "fecha": "Sep. 2026",
+      "texto": "Mercado Libre baja a $15.000 el mínimo de envío gratis para compradores Meli+. Lo absorbe Mercado Libre y no cambia los costos del vendedor."
+    }
+  ],
+  "fuentes": {
+    "oficiales": [
+      {
+        "t": "Costos por vender un producto y opciones de cuotas",
+        "u": "https://www.mercadolibre.com.ar/ayuda/870"
+      },
+      {
+        "t": "Costo por unidad vendida (Full, correo, colecta, puntos de despacho)",
+        "u": "https://www.mercadolibre.com.ar/ayuda/49926"
+      },
+      {
+        "t": "Costos de envío gratis · MercadoLíder / verde / sin reputación",
+        "u": "https://www.mercadolibre.com.ar/ayuda/40538"
+      },
+      {
+        "t": "Costos de envío gratis · reputación amarilla",
+        "u": "https://www.mercadolibre.com.ar/ayuda/40545"
+      },
+      {
+        "t": "Costos de envío gratis · reputación naranja o roja",
+        "u": "https://www.mercadolibre.com.ar/ayuda/40547"
+      },
+      {
+        "t": "Costos de envío gratis · productos usados",
+        "u": "https://www.mercadolibre.com.ar/ayuda/50026"
+      },
+      {
+        "t": "Costos de envío gratis · categorías de Moda",
+        "u": "https://www.mercadolibre.com.ar/ayuda/51847"
+      },
+      {
+        "t": "Cómo se calcula el costo de envío (peso volumétrico)",
+        "u": "https://www.mercadolibre.com.ar/ayuda/C-mo-calcular-el-peso-de-tu-en_4420"
+      },
+      {
+        "t": "Funcionamiento de los envíos gratis",
+        "u": "https://www.mercadolibre.com.ar/ayuda/16467"
+      },
+      {
+        "t": "Full · costo de almacenamiento diario",
+        "u": "https://www.mercadolibre.com.ar/ayuda/24253"
+      },
+      {
+        "t": "Full · cuánto cuesta operar",
+        "u": "https://vendedores.mercadolibre.com.ar/nota/cuanto-cuesta-operar-en-full"
+      },
+      {
+        "t": "Mercado Pago · plazos para disponer del dinero de una venta",
+        "u": "https://www.mercadopago.com.ar/ayuda/275"
+      },
+      {
+        "t": "Mercado Pago · costos de Link de pago",
+        "u": "https://www.mercadopago.com.ar/ayuda/33392"
+      },
+      {
+        "t": "Impuestos si sos monotributista y vendés en Mercado Libre",
+        "u": "https://vendedores.mercadolibre.com.ar/nota/monotributistas-en-mercado-libre"
+      },
+      {
+        "t": "Impuestos si sos responsable inscripto y vendés en Mercado Libre",
+        "u": "https://vendedores.mercadolibre.com.ar/nota/responsables-inscriptos-en-mercado-libre"
+      },
+      {
+        "t": "Impuestos vigentes en Mercado Libre y Mercado Pago (regímenes)",
+        "u": "https://www.mercadopago.com.ar/developers/en/support/percepciones-facturacion-ventas_302"
+      },
+      {
+        "t": "API de costos por vender (listing_prices)",
+        "u": "https://developers.mercadolibre.com.ar/comision-por-vender"
+      }
+    ],
+    "terceros": [
+      {
+        "t": "Unidrop · cambios desde el 1/9/2026 (tarifas Flex)",
+        "u": "https://www.unidrop.com.ar/blog/cambios-mercado-libre-septiembre-2026"
+      },
+      {
+        "t": "UpSeller · tarifas de Envíos Flex desde 1/09",
+        "u": "https://www.upseller.com/es/blog-article-1001"
+      }
+    ],
+    "simulador": "https://www.mercadolibre.com.ar/simulador-de-costos"
+  }
+}
