@@ -42,4 +42,7 @@ app.MapControllers();
 // Endpoint de estado para comprobar que el backend corre bien
 app.MapGet("/", () => Results.Ok(new { status = "MATOLI API is running fine!", version = "1.0.0" }));
 
+// Endpoint de "wake up" para despertar al servicio
+app.MapGet("/api/wake", () => Results.Ok(new { message = "Despierto!" }));
+
 app.Run();
