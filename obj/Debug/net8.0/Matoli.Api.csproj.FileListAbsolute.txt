@@ -69,3 +69,12 @@ C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\obj\Debug\net8.0\refint\Mato
 C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\obj\Debug\net8.0\Matoli.Api.pdb
 C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\obj\Debug\net8.0\Matoli.Api.genruntimeconfig.cache
 C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\obj\Debug\net8.0\ref\Matoli.Api.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Agente\Desktop\Repos\Calculadora-ML---Back\bin\Debug\net8.0\BCrypt-Net-Next.dll

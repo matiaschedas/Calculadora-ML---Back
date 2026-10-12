@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Matoli.Api.Models;
 using Matoli.Api.Services;
 
 namespace Matoli.Api.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class CalculoController : ControllerBase
