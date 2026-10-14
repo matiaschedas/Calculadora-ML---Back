@@ -6,6 +6,13 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Soporte para variable de entorno PORT (utilizada por Render, Railway, etc.)
+var port = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrEmpty(port))
+{
+    builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+}
+
 // Configuración de JWT
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var secretKey = jwtSettings["SecretKey"] 
@@ -28,32 +35,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// Configurar CORS para permitir peticiones desde el frontend de producción y entornos locales
+// Configurar CORS
 builder.Services.AddCors(options =>
 {
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+
     options.AddPolicy("CorsPolicy", policy =>
     {
-        if (builder.Environment.IsDevelopment())
-        {
-            policy.AllowAnyOrigin()
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        }
-        else
-        {
-            policy.WithOrigins(
-                      "https://calculadora-ml-front.onrender.com",
-                      "http://localhost:3000",
-                      "http://localhost:5191",
-                      "http://127.0.0.1:5191",
-                      "http://127.0.0.1:5500",
-                      "http://localhost:5500",
-                      "http://localhost:8080",
-                      "http://127.0.0.1:8080"
-                  )
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        }
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 
@@ -107,13 +103,12 @@ app.UseCors("CorsPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
-
+app.MapControllers().RequireCors("CorsPolicy");
 
 // Endpoint de estado para comprobar que el backend corre bien
-app.MapGet("/", () => Results.Ok(new { status = "MATOLI API is running fine!", version = "1.0.0" }));
+app.MapGet("/", () => Results.Ok(new { status = "MATOLI API is running fine!", version = "1.0.0" })).RequireCors("CorsPolicy");
 
 // Endpoint de "wake up" para despertar al servicio
-app.MapGet("/api/wake", () => Results.Ok(new { message = "Despierto!" }));
+app.MapGet("/api/wake", () => Results.Ok(new { message = "Despierto!" })).RequireCors("CorsPolicy");
 
 app.Run();
